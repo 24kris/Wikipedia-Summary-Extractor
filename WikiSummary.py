@@ -12,7 +12,7 @@ Created on Mon Dec  10 22:24:08 2018
 import requests
 from bs4 import BeautifulSoup
 path='/home/krishnakant/Desktop/tushar/Summary.txt' ####Enter the path to your file here
-wiki_url='https://en.wikipedia.org/wiki/Barack_Obama' #####Enter the wiki url here
+wiki_url='https://en.wikipedia.org/wiki/A_Head_Full_of_Dreams' #####Enter the wiki url here
 source_code = requests.get(wiki_url).text
 soup = BeautifulSoup(source_code,'html.parser')
 t=soup.find('div',{'id':'bodyContent'})
